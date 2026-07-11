@@ -3,9 +3,6 @@
 # Of telling the day of the week a date falls on by following an algorithm
 # I did not generate any of the code using AI, I only used AI to remember python syntax and correct myself about Conway's doomsday formula
 
-# idk i just felt like importing a lib but i dont think i needed that shit
-import numpy
-
 # define the days of the week in numbers, 0 for sunday, 6 for saturday
 days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 

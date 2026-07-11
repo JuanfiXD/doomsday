@@ -5,7 +5,7 @@
 # This "trainer" script is using the already working and figured out script to generate a random day and promt the user
 # to input the day of the week and tell them if they are right or wrong in order to train doomsday mind method
 
-import numpy as np
+import random as rnd
 import time
 
 # define the days of the week in numbers, 0 for sunday, 6 for saturday
@@ -20,10 +20,10 @@ loop = True
 while loop:
     # Mark days in month
     days_in_month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    year = np.random.randint(1000,2201)
-    month = np.random.randint(1,13)
+    year = rnd.randint(1000,2200)
+    month = rnd.randint(1,12)
     max_day = days_in_month[month]
-    day = np.random.randint(1,max_day + 1)
+    day = rnd.randint(1,max_day)
 
     # Prompt the user with the question
     print(f"\nWhat day of the week was or will be on {months[month]} {day} of {year}?\n")
